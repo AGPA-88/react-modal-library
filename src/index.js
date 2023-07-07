@@ -1,6 +1,26 @@
-import React from 'react'
-import styles from './styles.module.css'
+import React from "react";
+import './modal.css'
 
-export const ExampleComponent = ({ text }) => {
-  return <div className={styles.test}>Example Component: {text}</div>
-}
+const Modal = ({ isOpen, setStatus, modalText }) => {
+
+      const closeModal = () => {
+        setStatus(false);
+      };
+      
+    if (!isOpen) return null;
+    
+    return (
+        <div className='modal-background'>
+            <div className="modal">
+                <div className="modal-content">
+                {modalText}
+                <span className="close" onClick={closeModal}>
+                    &times;
+                </span>
+                </div>
+            </div>
+        </div>
+    );
+  };
+  
+  export default Modal;
