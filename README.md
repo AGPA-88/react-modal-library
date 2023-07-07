@@ -7,7 +7,7 @@
 ## Install
 
 ```bash
-npm install --save react-modal-library
+npm install --save agpa-react-modal-library
 ```
 
 ## Usage
