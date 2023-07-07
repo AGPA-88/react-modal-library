@@ -2,7 +2,7 @@
 
 > a modal react component
 
-[![NPM](https://img.shields.io/npm/v/react-modal-library.svg)](https://www.npmjs.com/package/react-modal-library) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/agpa-react-modal-library.svg)](https://www.npmjs.com/package/agpa-react-modal-library) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
@@ -15,8 +15,8 @@ npm install --save agpa-react-modal-library
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-modal-library'
-import 'react-modal-library/dist/index.css'
+import MyComponent from 'agpa-react-modal-library'
+import 'agpa-react-modal-library/dist/index.css'
 
 class Example extends Component {
   render() {
