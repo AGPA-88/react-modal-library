@@ -1,5 +1,3 @@
-Certainly! Here's the updated readme file with markdown formatting:
-
 # agpa-react-modal-library
 
 ## Installation
