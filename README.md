@@ -1,30 +1,51 @@
-# react-modal-library
+Certainly! Here's the updated readme file with markdown formatting:
 
-> a modal react component
+# agpa-react-modal-library
 
-[![NPM](https://img.shields.io/npm/v/agpa-react-modal-library.svg)](https://www.npmjs.com/package/agpa-react-modal-library) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+## Installation
 
-## Install
+To use the Modal component in your React project, you can install the npm package `agpa-react-modal-library` by running the following command:
 
-```bash
-npm install --save agpa-react-modal-library
+```
+npm install agpa-react-modal-library
 ```
 
 ## Usage
 
-```jsx
-import React, { Component } from 'react'
+Once you have installed the package, you can import the Modal component in your React code by adding the following line at the top of your file:
 
-import MyComponent from 'agpa-react-modal-library'
-import 'agpa-react-modal-library/dist/index.css'
-
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
+```javascript
+import Modal from 'agpa-react-modal-library'
 ```
 
-## License
+You can then use the Modal component in your code as shown in the following example:
 
-MIT © [AGPA-88](https://github.com/AGPA-88)
+```javascript
+import React, { useState } from 'react';
+import Modal from 'agpa-react-modal-library';
+
+function App() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openModal = () => {
+    setIsOpen(true);
+  }
+
+  const closeModal = () => {
+    setIsOpen(false);
+  }
+
+  return (
+    <div>
+      <button onClick={openModal}>Open Modal</button>
+      <Modal isOpen={isOpen} setStatus={setIsOpen} modalText="Hello, World!" />
+    </div>
+  );
+}
+
+export default App;
+```
+
+In the code above, we have imported the Modal component and used it inside the `App` component. The `isOpen` prop is used to control whether the Modal is open or closed, while the `setStatus` prop is used to update the `isOpen` state when the user clicks the close button. The `modalText` prop is used to display the text inside the Modal.
+
+That's it! You should now be able to use the Modal component from the `agpa-react-modal-library` package in your React project.
