@@ -13,9 +13,11 @@ const Modal = ({ isOpen, setStatus, modalText }) => {
       <div className='modal'>
         <div className='modal-content'>
           {modalText}
-          <span className='close' onClick={closeModal}>
-            &times;
-          </span>
+          <div className='closeBox'>
+            <span className='close' onClick={closeModal}>
+              &times;
+            </span>
+          </div>
         </div>
       </div>
     </div>
