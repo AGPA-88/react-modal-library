@@ -12,6 +12,7 @@ const Modal = ({ isOpen, setStatus, modalText, style }) => {
   const bgColor = style?.bgColor ? style.bgColor : ''
   const modalColor = style?.modalColor ? style.modalColor : 'white'
   const width = style?.width ? style.width : '90%'
+  const height = style?.height ? style.height : '90%'
 
   return (
     <div
@@ -22,7 +23,7 @@ const Modal = ({ isOpen, setStatus, modalText, style }) => {
     >
       <div
         className='modal'
-        style={{ width: width, backgroundColor: modalColor }}
+        style={{ width: width, backgroundColor: modalColor, height: height }}
       >
         <div className='modal-content'>
           {modalText}
