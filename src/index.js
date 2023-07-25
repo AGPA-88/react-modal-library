@@ -12,7 +12,7 @@ const Modal = ({ isOpen, setStatus, modalText, style }) => {
   const bgColor = style?.bgColor ? style.bgColor : ''
   const modalColor = style?.modalColor ? style.modalColor : 'white'
   const width = style?.width ? style.width : '90%'
-  const height = style?.height ? style.height : '90%'
+  const height = style?.height ? style.height : '50px'
 
   return (
     <div
